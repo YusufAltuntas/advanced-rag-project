@@ -7,9 +7,15 @@ from langchain_openai import OpenAIEmbeddings
 load_dotenv()
 
 urls = [
-    "https://lilianweng.github.io/posts/2023-06-23-agent/",
-    "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/",
-    "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
+    #"https://media.wizards.com/2014/downloads/dnd/PlayerDnDBasicRules_v0.2_PrintFriendly.pdf",
+    # "https://media.wizards.com/2014/downloads/dnd/DMBasicRulesv.0.3_PrinterFriendly.pdf",
+    # "https://media.wizards.com/2014/downloads/dnd/HoardDragonQueen_Supplement_PF_v0.3.pdf",
+    # "https://media.wizards.com/2014/downloads/dnd/RiseTiamatSupplementv0.2_Printer.pdf",
+    # "https://media.wizards.com/2015/downloads/dnd/EE_PlayersCompanion.pdf",
+    # "https://media.wizards.com/downloads/dnd/ADVLeague_PlayerGuide_TODv1.pdf",
+    # "https://media.wizards.com/2015/downloads/dnd/DDALPG_EEv1Print.pdf",
+    "https://media.wizards.com/2015/downloads/dnd/UA_Eberron_v1.1.pdf"
+    # "https://media.wizards.com/2015/downloads/dnd/UA_Battlesystem.pdf"
 ]
 
 docs = [WebBaseLoader(url).load() for url in urls]
